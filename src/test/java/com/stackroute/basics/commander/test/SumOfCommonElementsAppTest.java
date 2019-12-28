@@ -12,8 +12,6 @@ import java.io.PrintStream;
 public class SumOfCommonElementsAppTest {
     private ByteArrayOutputStream myOutStream;
 
-
-
     @BeforeEach
     public void setUp() {
         myOutStream = new ByteArrayOutputStream();

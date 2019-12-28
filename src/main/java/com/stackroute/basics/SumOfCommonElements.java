@@ -3,29 +3,29 @@ package com.stackroute.basics;
 import java.util.Scanner;
 
 public class SumOfCommonElements {
-    Scanner sc = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         SumOfCommonElements object = new SumOfCommonElements();
 
         int size = object.getArraySize();
 
-        int[] array1 = object.getArrayElements(size);
-        int[] array2 = object.getArrayElements(size);
+        int[] firstArray = object.getArrayElements(size);
+        int[] secondArray = object.getArrayElements(size);
 
-        int result = object.calculateSumOfCommonElements(array1, array2);
+        int result = object.calculateSumOfCommonElements(firstArray, secondArray);
 
         object.displayResult(result);
     }
 
     public int getArraySize() {
-        return sc.nextInt();
+        return scanner.nextInt();
     }
 
     public int[] getArrayElements(int size) {
         int[] array = new int[size];
         for (int i = 0; i < size; i++) {
-          array[i] = sc.nextInt();
+          array[i] = scanner.nextInt();
         }
         return array;
     }
@@ -40,16 +40,16 @@ public class SumOfCommonElements {
 
     }
 
-    public int calculateSumOfCommonElements(int array1[], int array2[]) {
-        if(array1.length==0 ||array2.length==0){
+    public int calculateSumOfCommonElements(int firstArray[], int secondArray[]) {
+        if(firstArray.length==0 ||secondArray.length==0){
             return -1;
         }
 
         int sum = 0;
-        for (int i = 0; i < array1.length; i++) {
-            for (int j = 0; j < array2.length; j++) {
-                if (array1[i] == array2[j])
-                    sum = sum + array1[i];
+        for (int i = 0; i < firstArray.length; i++) {
+            for (int j = 0; j < secondArray.length; j++) {
+                if (firstArray[i] == secondArray[j])
+                    sum = sum + firstArray[i];
             }
         }
         if (sum == 0) {
