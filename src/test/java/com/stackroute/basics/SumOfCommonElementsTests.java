@@ -13,14 +13,14 @@ public class SumOfCommonElementsTests {
     private static SumOfCommonElements sumOfCommonELements;
 
     @BeforeEach
-    public void setup() {
+    public void setUp() {
         // This methods runs, before running each test case
         // This method is used to initialize the required variables
         sumOfCommonELements = new SumOfCommonElements();
     }
 
     @AfterEach
-    public void teardown() {
+    public void tearDown() {
         // This method runs, after each test case
         // This method is used to clear the initialized variables
         sumOfCommonELements = null;
