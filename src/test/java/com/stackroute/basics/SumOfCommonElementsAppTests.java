@@ -1,6 +1,5 @@
 package com.stackroute.basics;
 
-import com.stackroute.basics.SumOfCommonElements;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -25,7 +24,7 @@ public class SumOfCommonElementsAppTests {
     }
 
     @Test
-    public void givenUserEntersValidArrayValuesWhenCommonELemnetsFoundThenDisplaysRequiresSum() {
+    public void givenUserEntersValidArrayValuesWhenCommonELemnetsFoundThenDisplaysSum() {
         String input = "5 10 20 30 40 50 5 10 15 20 25";
         String output = "30";
         ByteArrayInputStream myInputStream = new ByteArrayInputStream(input.getBytes());
