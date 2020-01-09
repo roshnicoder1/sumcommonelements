@@ -21,7 +21,7 @@ public class SumOfCommonElements {
         //display the result
     }
 
-    public int calculateSumOfCommonElements(int firstArray[], int secondArray[]) {
+    public int calculateSumOfCommonElements(int[] firstArray, int[] secondArray) {
         return 0;
     }
     public void closeScanner(){
