@@ -2,7 +2,7 @@
 
 **Given two set of integer arrays calculate the sum of common elements**
 
-**This exercise contains a class named SumOfCommonElements with the following method:**
+**This exercise contains a class named SumOfCommonElements with the following methods :**
 
     getArraySize() : int 
     -Should scan for array size
@@ -16,8 +16,11 @@
     -Should return -1 if the input array size is zero.
 --------------------------------------------------------------------------    
     displayResult() : void 
-    -Should diplay the result as shown in the example sectioon 
-  
+    -Should diplay the result as shown in the example section 
+------------------------------------------------------------------------
+    closeScanner() : void
+    -Should close the Scanner object
+    
 **Do the following in the main method of SumOfCommonElements class**
 
 Call the functions in the required sequence. 
