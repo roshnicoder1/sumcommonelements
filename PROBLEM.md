@@ -4,21 +4,23 @@
 
 **This exercise contains a class named SumOfCommonElements with the following method:**
 
-    getArraySize():int 
-    getArrayElements(int):int[]
-    calculateSumOfCommonElements(int[],int[]):int
-    displayResult():void  
+    getArraySize() : int 
+    -Should scan for array size
+ ----------------------------------
+    getArrayElements(int) : int[]
+    -Should scan for storing array elements in two arrays separately
+ ---------------------------------------------------------------------
+    calculateSumOfCommonElements(int[],int[]) : int
+    -Should return the sum of common elements between the array elements.
+    -Should return 0 if there are no common elements.
+    -Should return -1 if the input array size is zero.
+--------------------------------------------------------------------------    
+    displayResult() : void 
+    -Should diplay the result as shown in the example sectioon 
   
-- An int value is scanned for getting the array size using getArraySize() method.
-- Set of arrays elements are scanned and stored in two arrays separetely using getArrayElements() method.
-- calculateSumOfCommonElements() should return:
-         the sum of common elements between the array elements.
-         zero if there are no common elements.
-         -1 if the input array size is 0.
-
 **Do the following in the main method of SumOfCommonElements class**
 
-call the functions in the required sequence. 
+Call the functions in the required sequence. 
 
 ## Example
     Sample Input:
